@@ -28,7 +28,7 @@ start_command = bytes(start_command, 'ascii')
 stop_command = bytes(stop_command, 'ascii')
 
 # ATI NET-FT
-atiAddress = ('192.168.1.1',49152)
+atiAddress = ('192.168.1.222',49152)
 # create socket
 sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 # connect to NetBox
