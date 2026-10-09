@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def printData(path, basename):
-	print "plotting from file ", path+basename+'.csv'
+	print("plotting from file ", path+basename+'.csv')
 	data = np.genfromtxt(path+basename+'.csv', delimiter=',', skip_header=1, skip_footer=1, names=['time', 'Fx', 'Fy', 'Fz', 'Tx', 'Ty', 'Tz'])
 	
 	plt.plot(data['time'], data['Fx'], color='r', label='Fx')
@@ -21,5 +21,5 @@ def printData(path, basename):
 	plt.legend()	
 	plt.show()
 	
-basename = raw_input('Enter file basename: ')
-printData('NetFT/', basename)
+basename = "netft_data"
+printData('/tmp/', basename)
